@@ -1,0 +1,42 @@
+########################################################################
+#							Duncan									   #
+########################################################################
+Law large numbers
+
+P = probability ( P[ ] = "Probability of" )
+v = fraction of ( in sample ) ( % error )
+u = probability of ( out of sample  ) ( % error )
+E = epsilon ( threshold | tolerance )
+e = ~2.7 constant
+N = sample size
+
+P[ |v - u| > E ] ≤ 2e^( 2E^2 * N)
+
+“u = v” means probably, approximately, correct
+
+
+Verification is different from learning
+	Theory => Have a theory and see how good it is
+	Learning =>
+
+h ~= f
+h = hypothesis
+u = % of incorrect classifications from h
+	( want u to be small | ~= 0)
+v = % of incorrect classifications from h in sample
+	( want v ~= u ~= 0 => h ~= f)
+
+
+Do not use all of your data
+	Keep some to test your sample size
+
+g = selection
+Ein = in sample
+Eout = out of sample
+
+P[ | Ein( g ) - Eout( g ) | > E ] ≤ 2Me^(-2E^2 * N)
+
+########################################################################
+#							Grant									   #
+########################################################################
+
